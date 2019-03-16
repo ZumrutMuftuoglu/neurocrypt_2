@@ -2,7 +2,7 @@
 import numpy as np
 def theta(t1, t2):
     return 1 if t1 == t2 else 0
-def random_walk(W, X, sigma, tau1, tau2, l):
+def random_walk(W, X, sigma, tau1, tau2, d):
     k, n = W.shape
     for (i, j), _ in np.ndenumerate(W):
         W[i, j] += X[i, j] * theta(sigma[i], tau1) * theta(tau1, tau2)
