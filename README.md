@@ -1,2 +1,2 @@
-# neurocryp2
+# neurocrypt2
 Neural Key Generation with Hebbian
